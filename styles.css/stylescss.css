@@ -92,7 +92,19 @@ img{
 .nav-list:hover{
     color: #404BBF;
 }
-
+.current {
+  color: #404bbf;
+}
+.nav-list.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+  border-radius: 2px;
+  content: '';
+}
 .contact-list{
     font-size: 16px;
     color: #434455;
@@ -174,7 +186,6 @@ img{
 .iconimg-about{
     width: 64px;
     height: 64px;
-
 }
 .container-section-two{
     color: #434455;
@@ -462,6 +473,7 @@ img{
     position: relative;
     overflow: hidden;
   }
+
 .examples-card{
  
     flex-basis: calc((100% - 2 * 24px) / 3);
@@ -485,7 +497,8 @@ img{
 .projects-link {
     text-decoration: none;}
 
-.projects-link:hover .project-overlay {
+.projects-link:hover
+.examples-overlay {
     transform: translateY(0);
     overflow: auto;
   }
