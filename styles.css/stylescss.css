@@ -94,6 +94,7 @@ img{
 }
 .current {
   color: #404bbf;
+  position: relative;
 }
 /*.nav-list.current.line::after {
   content: " ";
@@ -121,10 +122,9 @@ img{
 
 .nav-list:hover::after,
 .nav-list:focus::after {
-  content: '';
   display: inline-block;
   height: 4px;
-  width: 48px;
+  width: 100%;
   color: #404bbf;
 } 
 .contact-list{
